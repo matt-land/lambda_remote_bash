@@ -4,8 +4,11 @@
 
 
 Create a python lambda called "remote_bash", and paste in the lambda_function.py code.
+
 A sample config is provided.
+
 Install aws cli tools if you haven't.
+
 Run aws configure if you haven't.
 
 ## Usage:
