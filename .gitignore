@@ -1,2 +1,5 @@
 .idea/
 temp.out
+code.zip
+terraform*
+.terraform*

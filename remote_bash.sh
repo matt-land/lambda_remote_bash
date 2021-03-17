@@ -8,5 +8,5 @@ if [ -z ${1} ]; then
 fi
 eval "aws lambda invoke --function-name remote_bash --payload '{\"Command\": \"$1\"}' ./temp.out > /dev/null 2>&1"
 # echo $STR
-cat ./temp.out | python -c 'import json, sys; obj=json.load(sys.stdin); print obj["Response"]'
+cat ./temp.out | python -c 'import json, sys; obj=json.load(sys.stdin); print(obj["Response"])'
 rm ./temp.out
